@@ -22,6 +22,7 @@ Setting up GUT:
 	- AssetLib, search for and install GUT by bitwes
 	- Project Settings - Plugins - Enable 
 	- Restart
+	- NOTE:  [GUT docs](https://gut.readthedocs.io/en/v9.4.0/)
 
 Add a file in unit_testing called hero.gd
 Add a file in test called test_hero.gd
