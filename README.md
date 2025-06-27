@@ -13,10 +13,18 @@ Examples include:
 	- Java - JUnit
 	- JavaScript - Jest
 	- C# - MSTest
+	- pytest or unittest
 	- etc
 
 Setting up GUT:
 	- create a folder called "test"  (need to investigate this, not sure why we need this yet)
-	- AssetLib, search for and install GUT
+	- create a folder called "unit_testing" (a place to keep your code as per this video)
+	- AssetLib, search for and install GUT by bitwes
 	- Project Settings - Plugins - Enable 
 	- Restart
+
+Add a file in unit_testing called hero.gd
+Add a file in test called test_hero.gd
+NOTE: test_ is an important part of GUT (similair to other testing frameworks)
+
+Need to extend from *GutTest*
