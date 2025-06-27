@@ -28,3 +28,22 @@ Add a file in test called test_hero.gd
 NOTE: test_ is an important part of GUT (similair to other testing frameworks)
 
 Need to extend from *GutTest*
+
+Some tweaks to the Config he recommends:
+	- exit on finish
+	- Font to Default, size 10
+	- Include Subdirs, select res://test (note:  you can set this up to taste)
+
+Add test (see code) note that the tests are prefixes with *_test*  
+
+"Run All"  - will run all the tests
+
+I got an error: *ERROR: res://addons/gut/gui/RunAtCursor.gd:61 - Invalid access to property or key 'inner_class' on a base object of type 'Nil'.*
+when I ran it the first time, but it was OK on the second.  
+
+Restart project, and see if the error returns ....
+
+
+	
+	
+	

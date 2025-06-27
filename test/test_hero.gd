@@ -12,3 +12,7 @@ func before_each() -> void:
 
 func after_each() -> void:
 	hero.queue_free()
+
+
+func test_initial_health() -> void:
+	assert_eq(hero.health, hero.max_health, "Hero should start with full health.")
