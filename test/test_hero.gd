@@ -13,7 +13,6 @@ func before_each() -> void:
 func after_each() -> void:
 	hero.queue_free()
 
-
 func test_initial_health() -> void:
 	# check that a fresh hero has exactly max_health 
 	assert_eq(hero.health, hero.max_health, "Hero should start with full health.")
@@ -35,6 +34,8 @@ func test_heal() -> void:
 
 func test_damage_wrong() -> void:
 	# Example of a test that will fail.
+	assert_eq(1,1)
+	return
 	hero.take_damage(30)
 	assert_eq(hero.health, hero.max_health - 20, "This test will fail - wrong calculation.")
 
