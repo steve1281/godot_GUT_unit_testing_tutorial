@@ -93,3 +93,11 @@ Time              0.121s
 ---- 2 failing tests ----
 
 ```
+
+
+Commits:
+	
+- b64168e setup project, install plugin GUT
+- ef1f6fa initial setup of a testable script, and a rough test_ for it
+- 90020d0 first test run
+- 5a73b73 add in some tests, some of which are designed to fail
