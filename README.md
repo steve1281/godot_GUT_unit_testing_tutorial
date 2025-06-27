@@ -41,9 +41,55 @@ Add test (see code) note that the tests are prefixes with *_test*
 I got an error: *ERROR: res://addons/gut/gui/RunAtCursor.gd:61 - Invalid access to property or key 'inner_class' on a base object of type 'Nil'.*
 when I ran it the first time, but it was OK on the second.  
 
-Restart project, and see if the error returns ....
+Restart project, and see if the error returns ...  It appears to be OK.
 
 
+
+After putting the tests as per video, you can Run All ans see the output.
+The output looks like a *pytest* run:
 	
+	```
 	
-	
+
+res://test/test_hero.gd
+* test_initial_health
+* test_take_damage
+* test_heal
+* test_damage_wrong
+	[Failed]:  [70] expected to equal [80]:  This test will fail - wrong calculation.
+	  at line 32
+* test_healing_overflow
+	[Failed]:  [100] expected to equal [150]:  This test will fail - trying to heal beyond max
+	  at line 36
+[WARNING]:  Test script has 2 unfreed children.  Increase log level for more details.
+3/5 passed.
+
+
+
+
+==============================================
+= Run Summary
+==============================================
+
+res://test/test_hero.gd
+- test_damage_wrong
+	[Failed]:  [70] expected to equal [80]:  This test will fail - wrong calculation.
+		  at line 32
+- test_healing_overflow
+	[Failed]:  [100] expected to equal [150]:  This test will fail - trying to heal beyond max
+		  at line 36
+
+---- Totals ----
+Warnings          1
+
+Scripts           1
+Tests             5
+  Passing         3
+  Failing         2
+Asserts           5
+Time              0.121s
+
+
+---- 2 failing tests ----
+
+```
